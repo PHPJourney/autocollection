@@ -1,0 +1,50 @@
+{
+  "network": [
+    {
+      "host": "wss://mainnet.gateway.tenderly.co",
+      "browser": "https://etherscan.io",
+      "from_block": 1,
+      "chainId": 1,
+      "name": "Ethereum",
+      "step": 10
+    }
+  ],
+  "site": [
+    {
+      "name": "Your Site name",
+      "url": "https://sample.com/wp-json/wp/v2/posts",
+      "username": "Your site Username",
+      "token": "Your Site Api Token",
+      "api": {
+        "categories": "https://sample/wp-json/wp/v2/categories",
+        "mapping": {
+          "game": {
+            "from": 1,
+            "to": 3,
+            "id": 1
+          }
+        }
+      },
+      "mapping": {
+        "title": "title",
+        "content": "content",
+        "author": "author",
+        "slug": "slug",
+        "categorize": "categories",
+        "format": "format",
+        "tag": "tags",
+        "excerpt": "excerpt",
+        "meta": "meta",
+        "status": "status"
+      },
+      "format": "gallery",
+      "author": 1,
+      "method": "POST",
+      "status": "publish",
+      "media": {
+        "url": "https://sample.com/wp-json/wp/v2/media",
+        "method": "POST"
+      }
+    }
+  ]
+}
